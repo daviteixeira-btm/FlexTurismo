@@ -80,6 +80,14 @@ header .menu {
     background-color: #122a57;
 }
 
+.btn:hover {
+    background-color: #1a3b79;
+}
+
+.list-items li a:hover {
+    color: #dbd7d7;
+}
+
 #quem-somos {
     align-items: center;
     flex-direction: row-reverse;
@@ -162,6 +170,10 @@ header .menu {
 .services-item img {
     width: 80%;
     margin: auto;
+}
+
+.services-item a:hover {
+    background-color: #dbd7d7;
 }
 
 #plans {
@@ -249,6 +261,10 @@ footer .footer p a {
     text-decoration: none;
 }
 
+footer .footer p a:hover {
+    color: #dbd7d7;
+}
+
 /* Mobile */
 
 @media(max-width: 992px){
@@ -307,16 +323,39 @@ footer .footer p a {
         margin-top: 30px;
     }
 
+    #services {
+        padding-bottom: 20px;
+    }
+
+    #services h4 {
+        margin: auto;
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
     .services-list {
         flex-direction: column;
     }
 
+    .services-item {
+        margin-bottom: 30px;
+    }
+
     .services-item img {
-        width: 50%;
+        width: auto;
         margin: auto;
     }
 
+    #plans h5 {
+        margin: auto;
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
     .lists-of-plans {
+        margin: auto;
         margin-bottom: 20px;
         flex-direction: column;
         align-items: flex-start;
@@ -327,5 +366,9 @@ footer .footer p a {
         margin: auto;
         max-width: 90%;
         margin-bottom: 20px;
+    }
+
+    .footer p {
+        margin: auto;
     }
 }
